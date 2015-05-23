@@ -9,11 +9,31 @@
         </button>
         <div class="collapse navbar-collapse navHeaderCollapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Media</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li 
+                    <?php if ($currentFile == "index.php") 
+                    { echo "class = \"active\""; } 
+                    ?> 
+                ><a href="#">Home</a></li>
+                <li
+                    <?php if ($currentFile == "media.php") 
+                    { echo "class = \"active\""; } 
+                    ?>
+                ><a href="#">Media</a></li>
+                <li
+                    <?php if ($currentFile == "store.php") 
+                    { echo "class = \"active\""; } 
+                    ?>
+                ><a href="#">Store</a></li>
+                <li
+                    <?php if ($currentFile == "about.php") 
+                    { echo "class = \"active\""; } 
+                    ?>
+                ><a href="#">About</a></li>
+                <li
+                    <?php if ($currentFile == "contact.php") 
+                    { echo "class = \"active\""; } 
+                    ?>
+                ><a href="#">Contact</a></li>
             </ul>
         </div>
     </div>
