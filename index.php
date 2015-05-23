@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php $currentFile = basename(__FILE__) ?>
 <html lang="en">
 <html>
     <head>
@@ -10,9 +11,9 @@
     	<title>Michigan Izzat</title>
     </head>
     <body>
-        <?php include ("header.php") ?>
+        <?php include ("header.php"); ?>
+        <?php include ("footer.php"); ?>
     </body>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-   </body>
-</html
+</html>
