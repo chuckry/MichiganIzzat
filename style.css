@@ -1,7 +1,6 @@
 * {
 	font-family: 'Nixie One', Helvetica;
 	color: black;
-	font-size: 16px;
 }
 
 h1 {
@@ -26,14 +25,13 @@ h3 {
 }
 
 .infoBox {
+	font-size: 20px;
 	margin: 2% 7%;
 }
 
 .imageContainer {
 	display: inline-block;
-	position: relative;
-	left: 10%;
-	
+	margin-left: 10%;
 }
 
 footer {
@@ -47,3 +45,12 @@ footer {
 footer .container {
 	margin-top: 1%;
 }
+
+@media only screen and (max-width: 767px) {
+	.imageContainer {
+		display: block;
+		margin: auto;
+	}
+}
+
+

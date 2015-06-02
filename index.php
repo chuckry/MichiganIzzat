@@ -35,7 +35,7 @@
             </div>
             <div class="imageContainer">
                 <h3>PLAY</h3>
-                <img src="Images/IzzatPlaySquare1.png">
+                <img src="Images/IzzatPlay.jpg">
             </div>
         </div>
         <?php include ("footer.php"); ?>
