@@ -1,4 +1,5 @@
 <script src="js/bootstrap.js"></script>
+<h1 id="IzzatBanner"></h1>
 <div class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <a href="#" class="active navbar-brand">IZZAT</a>
@@ -13,12 +14,12 @@
                     <?php if ($currentFile == "index.php") 
                     { echo "class = \"active\""; } 
                     ?> 
-                ><a href="#">Home</a></li>
+                ><a href="index.php">Home</a></li>
                 <li
                     <?php if ($currentFile == "media.php") 
                     { echo "class = \"active\""; } 
                     ?>
-                ><a href="#">Media</a></li>
+                ><a href="media.php">Media</a></li>
                 <li
                     <?php if ($currentFile == "store.php") 
                     { echo "class = \"active\""; } 
