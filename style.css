@@ -21,8 +21,23 @@ h2 {
 }
 
 h3 {
-	text-align: center;
+	font-size: 100px;
+	padding: 10%;
 	color: inherit;
+}
+
+.leftText {
+	float: left;
+	color: inherit;
+}
+
+.rightText {
+	float: right;
+	color: inherit;
+}
+
+#Fly {
+	font-size: 120px;
 }
 
 .navbar {
@@ -42,14 +57,14 @@ h3 {
 	color: white;
 }
 
-#indexTwoLayer {
+.goldBackground {
 	background-color: #ffcc00;
-	color: black;
+	color: #1F1F1F;
 }
 
-#indexThreeLayer {
-	background-color: black;
-	color: white;
+.greyBackground {
+	background-color: #1F1F1F;
+	color: #ffcc00;
 }
 
 /* -------- End Rectangle background styling --------  */
@@ -62,23 +77,21 @@ h3 {
 	color: inherit;
 }
 
-.pairWorkPlay {
-	text-align: center;
-	margin-left, margin-right: 0;
-	margin-bottom: 3%;
-}
-
 .imageContainer {
-	display: inline-block;
+	display: block;
 	color: inherit;
+	padding: 3%;
+	overflow: hidden;
 }
 
-#Work {
-	margin-right: 2%;
+.leftImage {
+	float: left;
+	margin-right: 3%;
 }
 
-#Play {
-	margin-left: 2%;
+.rightImage {
+	float: right;
+	margin-left: 3%;
 }
 
 p {
@@ -87,6 +100,7 @@ p {
 }
 	
 img {
+	display: inline;
 	border: 2px solid black;
 }
 
@@ -94,10 +108,6 @@ img {
 	text-align: center;
 	margin: inherit;
 	color: inherit;
-}
-
-#Dance h3 {
-	font-size: 60px;
 }
 
 /* ----------- End Index Image Containers ------------ */
