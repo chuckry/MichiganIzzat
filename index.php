@@ -28,27 +28,30 @@
             </p>
         </div>
     </div>
-    <div id="indexTwoLayer" class="backgroundLayer">
-        <div class="infoBox">
-            <h2>FALL TOGETHER, FLY TOGETHER</h2>
-            <div class="pairWorkPlay">
-                <div id="Work" class="imageContainer">
-                    <h3>WORK</h3>
-                    <img id="WorkImage" src="Images/IzzatWork.jpg" alt="IzzatWorkCollage">
-                </div>
-                <div id="Play" class="imageContainer">
-                    <h3>PLAY</h3>
-                    <img id="PlayImage" src="Images/IzzatPlay.jpg" alt="IzzatPlayCollage">
-                </div>
+    <div class="infoBox">
+        <div class="backgroundLayer goldBackground">
+            <div id="Work" class="imageContainer">
+                <h3 class="rightText">WORK</h3>
+                <img id="WorkImage" class="leftImage" src="Images/IzzatWork.jpg" alt="IzzatWorkCollage">
+            </div>
+        </div>
+        <div class="backgroundLayer greyBackground">
+            <div id="Play" class="imageContainer">
+                <h3 class="leftText">PLAY</h3>
+                <img id="PlayImage" class="rightImage" src="Images/IzzatPlay.jpg" alt="IzzatPlayCollage">
+            </div>
+        </div>
+        <div class="backgroundLayer goldBackground">
+            <div id="Fall" class="imageContainer">
+                <h3 class="rightText">FALL</h3>
+                <img id="FallImage" class="leftImage" src="Images/IzzatWork.jpg" alt="IzzatFallImage">
             </div>
         </div>
     </div>
-    <div id="indexThreeLayer" class="backgroundLayer">
-        <div class="infoBox">
-            <div id="Dance">
-                <h3>DANCE</h3>
-                <img src="Images/IzzatAwariJumpNarrow.png" alt="IzzatJump">
-            </div>
+    <div class="infoBox">
+        <div id="Dance">
+            <h3 id="Fly">FLY</h3>
+            <img src="Images/IzzatAwariJumpNarrow.png" alt="IzzatJump">
         </div>
     </div>
     <?php include ("footer.php"); ?>
