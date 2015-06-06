@@ -1,5 +1,5 @@
 * {
-	font-family: 'Nixie One', Helvetica;
+	font-family: Roboto, 'Nixie One', Helvetica;
 	color: black;
 	max-width: 100%;
 	overflow-x: hidden;
@@ -29,11 +29,13 @@ h3 {
 .leftText {
 	float: left;
 	color: inherit;
+	margin-left: 8%;
 }
 
 .rightText {
 	float: right;
 	color: inherit;
+	margin-right: 8%;
 }
 
 #Fly {
@@ -54,17 +56,17 @@ h3 {
 
 #indexOneLayer {
 	background-color: black;
-	color: white;
+	color: #ECF0F1;
 }
 
 .goldBackground {
-	background-color: #ffcc00;
+	background-color: #ECF0F1;
 	color: #1F1F1F;
 }
 
 .greyBackground {
-	background-color: #1F1F1F;
-	color: #ffcc00;
+	background-color: #2F2F2F;
+	color: #ECF0F1;
 }
 
 /* -------- End Rectangle background styling --------  */
@@ -101,7 +103,6 @@ p {
 	
 img {
 	display: inline;
-	border: 2px solid black;
 }
 
 #Dance {
