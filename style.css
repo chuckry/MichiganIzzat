@@ -1,5 +1,5 @@
 * {
-	font-family: Roboto, 'Nixie One', Helvetica;
+	font-family: 'Roboto', 'Nixie One', Helvetica;
 	color: black;
 	max-width: 100%;
 	overflow-x: hidden;
@@ -22,24 +22,7 @@ h2 {
 
 h3 {
 	font-size: 100px;
-	padding: 10%;
 	color: inherit;
-}
-
-.leftText {
-	float: left;
-	color: inherit;
-	margin-left: 8%;
-}
-
-.rightText {
-	float: right;
-	color: inherit;
-	margin-right: 8%;
-}
-
-#Fly {
-	font-size: 120px;
 }
 
 .navbar {
@@ -51,6 +34,7 @@ h3 {
 
 .backgroundLayer {
 	margin: 0;
+	height: 404px;
 	width: 100%;
 }
 
@@ -60,13 +44,18 @@ h3 {
 }
 
 .goldBackground {
-	background-color: #ECF0F1;
-	color: #1F1F1F;
+	background-color: #ff6;
+	color: #191919;
 }
 
 .greyBackground {
-	background-color: #2F2F2F;
-	color: #ECF0F1;
+	background-color: #191919;
+	color: #ff6;
+}
+
+#indexTwoLayer {
+	background-color: black;
+	color: yellow;
 }
 
 /* -------- End Rectangle background styling --------  */
@@ -82,18 +71,37 @@ h3 {
 .imageContainer {
 	display: block;
 	color: inherit;
-	padding: 3%;
 	overflow: hidden;
 }
 
 .leftImage {
 	float: left;
-	margin-right: 3%;
+	margin-left: 8%;
 }
 
 .rightImage {
 	float: right;
-	margin-left: 3%;
+	margin-right: 8%;
+}
+
+.leftText {
+	float: left;
+	color: inherit;
+	margin-left: 8%;
+	padding: 10%;
+}
+
+.rightText {
+	float: right;
+	color: inherit;
+	margin-right: 8%;
+	padding: 10%;
+}
+
+#upperText {
+	font-family: 'Alegreya Sans SC';
+	font-size: 80px;
+	margin: 2%;
 }
 
 p {
@@ -103,12 +111,19 @@ p {
 	
 img {
 	display: inline;
+	border: 2px solid black;
 }
 
-#Dance {
+#Fly {
 	text-align: center;
-	margin: inherit;
 	color: inherit;
+	font-size: 120px;
+	padding: 0;
+	margin: 0;
+}
+
+.text-muted {
+	margin: auto;
 }
 
 /* ----------- End Index Image Containers ------------ */
@@ -127,18 +142,26 @@ footer .container {
 
 /* 480 px */
 @media only screen and (max-width: 600px) {
+
+	.backgroundLayer {
+		padding-bottom: 10%;
+	}
+
 	.imageContainer {
 		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
 		width: 100%;
+	}
+
+	.leftImage, .rightImage, .leftText, .rightText {
+		float: none;
+		margin: auto;
 	}
 
 	#Work, #Play {
 		margin: auto;
 	}
 
-	#WorkImage {
+	#WorkImage, #FallImage {
 		content:url("Images/IzzatWorkSmall.png");
 	}
 
