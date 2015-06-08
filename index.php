@@ -30,7 +30,7 @@
             </p>
         </div>
     </div>
-    <div class="backgroundLayer goldBackground">
+    <div class="backgroundLayer whiteBackground">
         <div id="Work" class="imageContainer">
             <h3 class="rightText">WORK</h3>
             <img id="WorkImage" class="leftImage" src="Images/IzzatWork.jpg" alt="IzzatWorkCollage">
@@ -42,13 +42,13 @@
             <img id="PlayImage" class="rightImage" src="Images/IzzatPlay.jpg" alt="IzzatPlayCollage">
         </div>
     </div>
-    <div class="backgroundLayer goldBackground">
+    <div class="backgroundLayer whiteBackground">
         <div id="Fall" class="imageContainer">
             <h3 class="rightText">FALL</h3>
             <img id="FallImage" class="leftImage" src="Images/IzzatWork.jpg" alt="IzzatFallImage">
         </div>
     </div>
-    <div id="indexTwoLayer" class="infoBox">
+    <div class="backgroundLayer greyBackground">
         <div id="Fly">
             <h3 id="upperText">FLY</h3>
             <img id="FlyImage" src="Images/IzzatAwariJumpNarrow.png" alt="IzzatJump">
