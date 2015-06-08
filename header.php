@@ -1,6 +1,6 @@
 <script src="js/bootstrap.js"></script>
-<h1 id="IzzatBanner"></h1>
-<div class="navbar navbar-inverse navbar-static-top">
+<img id="Banner" src="Images/IzzatColorfulBanner.png">
+<div class="navbar navbar-inverse navbar-static-top navbar-custom">
     <div class="container">
         <a href="#" class="active navbar-brand">IZZAT</a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse">
