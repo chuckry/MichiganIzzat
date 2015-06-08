@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100italic' rel='stylesheet' type='text/css'>    
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Michigan Izzat</title>
@@ -29,30 +30,28 @@
             </p>
         </div>
     </div>
-    <div class="infoBox">
-        <div class="backgroundLayer goldBackground">
-            <div id="Work" class="imageContainer">
-                <h3 class="rightText">WORK</h3>
-                <img id="WorkImage" class="leftImage" src="Images/IzzatWork.jpg" alt="IzzatWorkCollage">
-            </div>
-        </div>
-        <div class="backgroundLayer greyBackground">
-            <div id="Play" class="imageContainer">
-                <h3 class="leftText">PLAY</h3>
-                <img id="PlayImage" class="rightImage" src="Images/IzzatPlay.jpg" alt="IzzatPlayCollage">
-            </div>
-        </div>
-        <div class="backgroundLayer goldBackground">
-            <div id="Fall" class="imageContainer">
-                <h3 class="rightText">FALL</h3>
-                <img id="FallImage" class="leftImage" src="Images/IzzatWork.jpg" alt="IzzatFallImage">
-            </div>
+    <div class="backgroundLayer goldBackground">
+        <div id="Work" class="imageContainer">
+            <h3 class="rightText">WORK</h3>
+            <img id="WorkImage" class="leftImage" src="Images/IzzatWork.jpg" alt="IzzatWorkCollage">
         </div>
     </div>
-    <div class="infoBox">
-        <div id="Dance">
-            <h3 id="Fly">FLY</h3>
-            <img src="Images/IzzatAwariJumpNarrow.png" alt="IzzatJump">
+    <div class="backgroundLayer greyBackground">
+        <div id="Play" class="imageContainer">
+            <h3 class="leftText">PLAY</h3>
+            <img id="PlayImage" class="rightImage" src="Images/IzzatPlay.jpg" alt="IzzatPlayCollage">
+        </div>
+    </div>
+    <div class="backgroundLayer goldBackground">
+        <div id="Fall" class="imageContainer">
+            <h3 class="rightText">FALL</h3>
+            <img id="FallImage" class="leftImage" src="Images/IzzatWork.jpg" alt="IzzatFallImage">
+        </div>
+    </div>
+    <div id="indexTwoLayer" class="infoBox">
+        <div id="Fly">
+            <h3 id="upperText">FLY</h3>
+            <img id="FlyImage" src="Images/IzzatAwariJumpNarrow.png" alt="IzzatJump">
         </div>
     </div>
     <?php include ("footer.php"); ?>
