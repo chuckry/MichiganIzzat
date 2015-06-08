@@ -1,17 +1,34 @@
-* {
+body, * {
 	font-family: 'Roboto', 'Nixie One', Helvetica;
 	color: black;
 	max-width: 100%;
 	overflow-x: hidden;
 }
 
-h1 {
-	background-image: url("Images/IzzatColorfulBannerNarrow.png");
-	background-size: 100%;
+/* -------------- Header and Footer -------------- */
+
+#Banner {
 	width: 100%;
-	margin: 0;
-	padding: 10% 0%;
 }
+
+.navbar-custom {
+	background-color: #111;
+	margin: 0;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #111;
+}
+
+footer .container {
+	margin-top: 1%;
+}
+
+/* ------------ End Header and Footer ------------ */
 
 h2 {
 	text-align: center;
@@ -25,32 +42,22 @@ h3 {
 	color: inherit;
 }
 
-.navbar {
-	background-color: #111;
-	margin: 0;
-}
-
 /* ---------- Rectangle background styling ----------  */
 
 .backgroundLayer {
 	margin: 0;
-	height: 404px;
+	height: auto;
 	width: 100%;
 }
 
-#indexOneLayer {
-	background-color: black;
-	color: #ECF0F1;
-}
-
-.goldBackground {
-	background-color: #ff6;
+.greyBackground {
+	background-color: #fbfcfc;
 	color: #191919;
 }
 
-.greyBackground {
-	background-color: #191919;
-	color: #ff6;
+.whiteBackground {
+	background-color: #95a5a6;
+	color: #191919;
 }
 
 #indexTwoLayer {
@@ -68,7 +75,7 @@ h3 {
 	color: inherit;
 }
 
-.imageContainer {
+.imageContainer, .videoContainer {
 	display: block;
 	color: inherit;
 	overflow: hidden;
@@ -101,7 +108,8 @@ h3 {
 #upperText {
 	font-family: 'Alegreya Sans SC';
 	font-size: 80px;
-	margin: 2%;
+	height: auto;
+	padding: 2%;
 }
 
 p {
@@ -122,34 +130,41 @@ img {
 	margin: 0;
 }
 
+#FlyImage {
+	width: 100%;
+}
+
 .text-muted {
 	margin: auto;
 }
 
 /* ----------- End Index Image Containers ------------ */
 
-footer {
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-	background-color: #111;
+/* ------------------- Media Stuff ------------------- */
+
+iframe {
+	width: 470px;
+	height: 264px;
 }
 
-footer .container {
-	margin-top: 1%;
+.leftVideo {
+	position: relative;
+	left: 10%;
 }
+
+/* ----------------- End Media Stuff ----------------- */
+
 
 /* 480 px */
-@media only screen and (max-width: 600px) {
-
-	.backgroundLayer {
-		padding-bottom: 10%;
+@media only screen and (max-width: 1079px) {
+	#Banner {
+		content:url("Images/IzzatColorfulBanner.png");
 	}
 
 	.imageContainer {
 		text-align: center;
 		width: 100%;
+		padding-bottom: 10%;
 	}
 
 	.leftImage, .rightImage, .leftText, .rightText {
