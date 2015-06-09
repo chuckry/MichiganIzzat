@@ -18,12 +18,16 @@
     	<h2>GALLERY</h2>
     </div>
     <h2>PERFORMANCES</h2>
-    <div class="backgroundLayer greyBackground">
-	    <div class="videoContainer leftVideo">
-	    	<iframe src="https://www.youtube.com/embed/X1W3eNvPpCM" frameborder="0" allowfullscreen></iframe>
-	    	<p class="rightText">Our performance at Blah blah blah</p>
-	    </div>
-	</div>
+    <div class="backgroundLayer">
+        <div class="videoContainer">
+            <h4 class="videoText">That Brown Show 2015</h4>
+        	<iframe src="https://www.youtube.com/embed/X1W3eNvPpCM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="videoContainer">
+            <h4 class="videoText">That Brown Show 2015</h4>
+            <iframe src="https://www.youtube.com/embed/X1W3eNvPpCM" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
     <?php include ("footer.php"); ?>
 </body>
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
