@@ -18,7 +18,7 @@
     	<h2>GALLERY</h2>
     </div>
     <h2>PERFORMANCES</h2>
-    <div class="backgroundLayer">
+    <div id="mediaBackgroundLayer" class="backgroundLayer blueBackground">
         <div class="videoContainer">
             <h4 class="videoText">That Brown Show 2015</h4>
         	<iframe src="https://www.youtube.com/embed/X1W3eNvPpCM" frameborder="0" allowfullscreen></iframe>
@@ -27,6 +27,7 @@
             <h4 class="videoText">That Brown Show 2015</h4>
             <iframe src="https://www.youtube.com/embed/X1W3eNvPpCM" frameborder="0" allowfullscreen></iframe>
         </div>
+        <span class="stretch"></span>
     </div>
     <?php include ("footer.php"); ?>
 </body>
