@@ -28,6 +28,10 @@ footer .container {
 	margin-top: 1%;
 }
 
+.caret {
+	color: #ecf0f1;
+}
+
 /* ------------ End Header and Footer ------------ */
 
 h2 {
@@ -220,11 +224,28 @@ iframe {
 		content:url("Images/IzzatPlaySmall.png");
 	}
 
-	.videoContainer {
+	/*Have a new Awari Jump image for anything less than 1088px*/
+}
 
+@media only screen and (max-width: 1230px) {
+	.videoContainer {
+		display: block;
+		width: 60%;
+		margin: auto;
 	}
 
-	/*Have a new Awari Jump image for anything less than 1088px*/
+	iframe {
+		display: block;
+		margin: auto;
+	}
+
+	.videoContainer:first-child {
+		margin-left: auto;
+	}
+
+	.videoContainer:nth-child(2) {
+		margin-right: auto;
+	}
 }
 
 
