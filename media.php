@@ -9,7 +9,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
    	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100italic' rel='stylesheet' type='text/css'>    
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" type="text/css" href="css/blueimp-gallery.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Michigan Izzat</title>
 </head>
@@ -29,24 +29,15 @@
             <img src="Images/IzzatColorful.jpg" alt="Colorful">
         </a>
     </div>
-    <div class="container marketing">  
-        <div class="row">      
-            <div class="col-md-12">
-            <!--slideshowarea-->
-                <div class="col-md-offset-2 col-md-10">
-                    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
-                        <div class="slides"></div>
-                        <h3 class="title"></h3>
-                        <a class="prev">‹</a>
-                        <a class="next">›</a>
-                        <a class="close">×</a>
-                        <a class="play-pause"></a>
-                        <ol class="indicator"></ol>
-                    </div>
-                </div>
-            </div>
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
         </div>
-    </div>
     <h2>PERFORMANCES</h2>
     <div id="mediaBackgroundLayer" class="backgroundLayer blueBackground">
         <div class="videoContainer">
@@ -62,27 +53,18 @@
     <?php include ("footer.php"); ?>
     <script src="js/blueimp-gallery.min.js"></script>
     <script>
-        blueimp.Gallery(
-            document.getElementById('links').getElementsByTagName('a'),
-            {
-                container: '#blueimp-gallery-carousel',
-                carousel: true
-            }
-        );
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {
+                    index: link, 
+                    event: event
+                },
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
     </script>
-    // <script>
-    //     document.getElementById('links').onclick = function (event) {
-    //         event = event || window.event;
-    //         var target = event.target || event.srcElement,
-    //             link = target.src ? target.parentNode : target,
-    //             options = {
-    //                 index: link, 
-    //                 event: event
-    //             },
-    //             links = this.getElementsByTagName('a');
-    //         blueimp.Gallery(links, options);
-    //     };
-    // </script>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
